@@ -76,7 +76,7 @@ s in the cell taking inference in both video and image
 
 https://github.com/user-attachments/assets/cc25084d-1dd4-4593-ba32-f7e52c75f4cf
 
-* ![Watch Vid if the player doesnt work](https://drive.google.com/file/d/1CTEwWgbO34of8VhRCJEC5nyTgMqsezn5/view?usp=sharing)
+* https://drive.google.com/file/d/1CTEwWgbO34of8VhRCJEC5nyTgMqsezn5/view?usp=sharing
 * Prompt: " a dog"
  
 
