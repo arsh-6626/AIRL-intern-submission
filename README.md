@@ -57,7 +57,10 @@ A VIT Trained on CIFAR10 is not expected to perform really well given the small 
 * Works both on videos and images
   
 ### How to Run: 
-* Change the prompt in text_labels in the cell taking inference in both video and image
+* Change the prompt in text_label
+
+
+s in the cell taking inference in both video and image
 * Run the collab top to down
 
 ## Image Result
@@ -67,8 +70,9 @@ A VIT Trained on CIFAR10 is not expected to perform really well given the small 
 
 ## Video Result
 
-https://github.com/user-attachments/assets/cdb848e9-d3f0-4f31-8e24-4141c3904b56
+https://github.com/user-attachments/assets/cc25084d-1dd4-4593-ba32-f7e52c75f4cf
 
+* ![Watch Vid if the player doesnt work](https://github.com/user-attachments/assets/cc25084d-1dd4-4593-ba32-f7e52c75f4cf)
 * Prompt: " a dog"
  
 
