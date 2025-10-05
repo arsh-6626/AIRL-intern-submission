@@ -36,10 +36,14 @@ ViTconfig = {
 
 ### Visualisation using Rollout Attention
 
-<img width="1143" height="600" alt="image" src="https://github.com/user-attachments/assets/2a6be0a0-f5ae-4595-80ea-aa2078fe8e8d" />
-<img width="1720" height="903" alt="image" src="https://github.com/user-attachments/assets/c8b6eb73-45c3-4352-980b-9f320ee75ef1" />
-<img width="1138" height="596" alt="image" src="https://github.com/user-attachments/assets/dde5086f-3bfe-4751-8ddf-fdf82115e131" />
-<img width="1718" height="904" alt="image" src="https://github.com/user-attachments/assets/01489ad3-8a34-47be-a688-298a081f70ad" />
+<img src="https://github.com/user-attachments/assets/2a6be0a0-f5ae-4595-80ea-aa2078fe8e8d" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/c8b6eb73-45c3-4352-980b-9f320ee75ef1" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/490dbe4b-e9ce-450c-b7ab-450059bf8aea" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/dde5086f-3bfe-4751-8ddf-fdf82115e131" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/5dd36929-1d91-47b2-87e2-e3ee6e4f1457" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/01489ad3-8a34-47be-a688-298a081f70ad" style="width:600px; height:auto;" />
+<img src="https://github.com/user-attachments/assets/659d21dc-cdc8-4fa0-bd02-4cf9d67db37c" style="width:600px; height:auto;" />
+
 
 ### Aditional comments
 * Including Dropout at various places improved accuracy
