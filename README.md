@@ -1,1 +1,77 @@
 # AIRL-intern-submission
+
+| File | Description                                                                           |
+|------|---------------------------------------------------------------------------------------|
+| `q1.ipynb` | CIFAR-10 ViT implementation, training, evaluation, and attention visualization. |
+| `q2.ipynb` | Text-driven segmentation with SAM 2 pipeline.                                   |
+| `README.md` | This file.                                                                     |
+________________________________________________________________________________________________
+
+# Q1 - VIT Trained on CIFAR 10
+
+### Config ( also in the notebook )
+```
+ViTconfig = {
+    "image_size": 32,
+    "patch_size": 4,
+    "num_classes": 10,
+    "num_channels": 3,
+    "patchify_method": "conv",
+    "hidden_size": 256,
+    "num_hidden_layers": 8,
+    "num_attention_heads": 8,
+    "intermediate_size": 512,
+    "hidden_dropout_prob": 0.2,
+    "bias": True
+}
+```
+### Evaluation Metrics
+* Val Accuracy: 76.12%
+* Train Accuracy: 85.06%
+
+### Training Graph with the above given config
+* The model was trained on a 1e-3 learning rate, with AdamW optimizer, ReduceonPlateau scheduler
+<img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/18cf3fde-71f0-479f-8e23-bdf4afdd18b2" />
+
+
+### Visualisation using Rollout Attention
+
+<img width="1143" height="600" alt="image" src="https://github.com/user-attachments/assets/2a6be0a0-f5ae-4595-80ea-aa2078fe8e8d" />
+<img width="1720" height="903" alt="image" src="https://github.com/user-attachments/assets/c8b6eb73-45c3-4352-980b-9f320ee75ef1" />
+<img width="1138" height="596" alt="image" src="https://github.com/user-attachments/assets/dde5086f-3bfe-4751-8ddf-fdf82115e131" />
+<img width="1718" height="904" alt="image" src="https://github.com/user-attachments/assets/01489ad3-8a34-47be-a688-298a081f70ad" />
+
+### Aditional comments
+* Including Dropout at various places improved accuracy
+* Patch Size 4 showed better accuracy from Patch Size 8
+* Increasing Num Layers to 8 increased accuracy
+* The val loss saturated after ~75th epoch
+
+
+### Conclusion
+A VIT Trained on CIFAR10 is not expected to perform really well given the small size of the dataset, a CNN would have performed better due to its inherent bias which transformer lacks, the paper mentioning the results on CIFAR10 are from a pretrained ViT.
+
+
+# Q2 : Text Prompt Based Semantic Segmentation by SAM
+* Video and image segmentation using SAM + GroundingDINO
+* Works both on videos and images
+  
+### How to Run: 
+* Change the prompt in text_labels in the cell taking inference in both video and image
+* Run the collab top to down
+
+## Image Result
+* Prompt : "a cat"
+* Result : 
+<img width="795" height="603" alt="image" src="https://github.com/user-attachments/assets/6c2bdbf5-a75d-46ae-ab4b-c02278255cfe" />
+
+## Video Result
+
+https://github.com/user-attachments/assets/cdb848e9-d3f0-4f31-8e24-4141c3904b56
+
+* Prompt: " a dog"
+ 
+
+
+
+
